@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional outlet installation services in King County, WA. Standard, GFCI, USB, and smart outlets. Expert installation and code compliance.">
+    <meta name="keywords" content="outlet installation King County, electrical outlet, GFCI outlets, USB outlets, smart outlets, outlet installation cost, new outlets">
+    <meta name="author" content="Kreate Electrician">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Outlet Installation Services - Kreate Electrician King County WA">
+    <meta property="og:description" content="Professional outlet installation in King County. All outlet types including standard, GFCI, USB, and smart outlets.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kreate-electrician.com/services/outlet-installation">
+    <meta property="og:image" content="https://storage.googleapis.com/imagesu/electrician/electrician4.jpg">
+    <title>Outlet Installation Services - Kreate Electrician King County WA</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #DC2626;
+            --primary-dark: #991B1B;
+            --primary-light: #FEE2E2;
+            --secondary: #1F2937;
+            --accent: #3B82F6;
+            --accent-light: #DBEAFE;
+            --text-dark: #111827;
+            --text-light: #6B7280;
+            --bg-light: #F9FAFB;
+            --bg-white: #FFFFFF;
+            --border: #E5E7EB;
+            --success: #10B981;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-white);
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-phone {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background-color: var(--bg-light);
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .breadcrumb a, .breadcrumb span {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .breadcrumb a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .hero-text h1 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image {
+            height: 400px;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Section */
+        section { padding: 5rem 0; }
+        .bg-light { background-color: var(--bg-light); }
+
+        /* Outlet Types Grid */
+        .outlet-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .outlet-type-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            border: 2px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .outlet-type-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .outlet-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .outlet-type-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .outlet-specs {
+            list-style: none;
+            margin: 1.5rem 0;
+            padding: 0;
+        }
+
+        .outlet-specs li {
+            padding: 0.5rem 0;
+            color: var(--text-light);
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .outlet-specs li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 0.75rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .feature-item h4 { margin-bottom: 0.5rem; }
+        .feature-item p { margin: 0; font-size: 0.95rem; }
+
+        /* Process */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 1rem;
+            border: 2px solid var(--border);
+            position: relative;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .step-card h3 { margin-bottom: 1rem; }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 3rem;
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 1.5rem;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        .comparison-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background-color: var(--bg-light);
+        }
+
+        /* Pricing */
+        .pricing-section {
+            background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+            padding: 3rem;
+            border-radius: 1rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border: 2px solid var(--border);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .price {
+            font-size: 2rem;
+            color: var(--primary);
+            font-weight: 800;
+            margin: 1rem 0;
+        }
+
+        .price-note {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-features {
+            text-align: left;
+            margin: 2rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 0;
+            list-style: none;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        /* Portfolio */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .portfolio-card {
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-card:hover .portfolio-image img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-info {
+            padding: 1.5rem;
+            background: white;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-banner h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-banner p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            cursor: pointer;
+            color: var(--text-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            display: none;
+            color: var(--text-light);
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 3rem 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a:hover { color: var(--primary); }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+            .hero-content { grid-template-columns: 1fr; gap: 2rem; }
+            .hero-image { height: 300px; }
+            .nav-links { gap: 1rem; font-size: 0.9rem; }
+            .comparison-table { font-size: 0.9rem; }
+            .comparison-table th, .comparison-table td { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">⚡ KREATE</a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#services">Services</a></li>
+                    <li><a href="/#projects">Projects</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+                <a href="tel:4253411111" class="nav-phone">📞 425-341-1111</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">Home</a> / <a href="/#services">Services</a> / <span>Outlet Installation</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Outlet Installation Services</h1>
+                    <p>Professional installation of electrical outlets for your home or business. All outlet types including standard, GFCI, USB, and smart outlets.</p>
+                    <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://storage.googleapis.com/imagesu/electrician/electrician4.jpg" alt="Professional outlet installation in King County">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outlet Types -->
+    <section>
+        <div class="container">
+            <h2>Types of Outlets We Install</h2>
+            <p style="font-size: 1.1rem; max-width: 700px; margin-bottom: 3rem;">We install all outlet types to meet your electrical needs and safety requirements.</p>
+
+            <div class="outlet-types-grid">
+                <div class="outlet-type-card">
+                    <div class="outlet-icon">🔌</div>
+                    <h3>Standard Outlets</h3>
+                    <p>Basic 15A and 20A outlets for everyday use throughout your home. The most common outlet type.</p>
+                    <ul class="outlet-specs">
+                        <li>15-20 amperes capacity</li>
+                        <li>Perfect for most devices</li>
+                        <li>Cost-effective solution</li>
+                        <li>Standard installation</li>
+                    </ul>
+                </div>
+
+                <div class="outlet-type-card">
+                    <div class="outlet-icon">⚠️</div>
+                    <h3>GFCI Outlets</h3>
+                    <p>Ground Fault Circuit Interrupter outlets provide shock protection near water. Required by code in bathrooms and kitchens.</p>
+                    <ul class="outlet-specs">
+                        <li>Shock protection</li>
+                        <li>Water-safe design</li>
+                        <li>Code-compliant</li>
+                        <li>Bathroom & kitchen essential</li>
+                    </ul>
+                </div>
+
+                <div class="outlet-type-card">
+                    <div class="outlet-icon">🔋</div>
+                    <h3>USB Outlets</h3>
+                    <p>Built-in USB ports for charging phones, tablets, and other devices without needing an adapter.</p>
+                    <ul class="outlet-specs">
+                        <li>Dual USB ports</li>
+                        <li>2-4 ampere capacity</li>
+                        <li>Fast charging available</li>
+                        <li>Convenient charging</li>
+                    </ul>
+                </div>
+
+                <div class="outlet-type-card">
+                    <div class="outlet-icon">📱</div>
+                    <h3>Smart Outlets</h3>
+                    <p>WiFi-enabled outlets controlled from your smartphone or voice assistant. Perfect for smart homes.</p>
+                    <ul class="outlet-specs">
+                        <li>Remote control</li>
+                        <li>Voice-activated options</li>
+                        <li>Energy monitoring</li>
+                        <li>Scheduling capability</li>
+                    </ul>
+                </div>
+
+                <div class="outlet-type-card">
+                    <div class="outlet-icon">🔥</div>
+                    <h3>AFCI Outlets</h3>
+                    <p>Arc Fault Circuit Interrupter outlets prevent electrical fires from faulty wiring. Required in bedrooms and living areas.</p>
+                    <ul class="outlet-specs">
+                        <li>Fire protection</li>
+                        <li>Arc detection</li>
+                        <li>Modern safety standard</li>
+                        <li>Code-required in bedrooms</li>
+                    </ul>
+                </div>
+
+                <div class="outlet-type-card">
+                    <div class="outlet-icon">⚡</div>
+                    <h3>High-Capacity Outlets</h3>
+                    <p>240V outlets for high-power appliances like ranges, dryers, water heaters, and EV chargers.</p>
+                    <ul class="outlet-specs">
+                        <li>240 volts capacity</li>
+                        <li>30-50 amperes</li>
+                        <li>Heavy-duty appliances</li>
+                        <li>Professional installation required</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Add Outlets -->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Why Add New Outlets?</h2>
+            <p style="font-size: 1.1rem; max-width: 700px; margin-bottom: 3rem;">Many homes don't have enough outlets in the right places. Here are common reasons to add more.</p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🏠</div>
+                    <div>
+                        <h4>Kitchen Remodels</h4>
+                        <p>Modern kitchens need more outlets for appliances, coffee makers, phone chargers, and more.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">💼</div>
+                    <div>
+                        <h4>Home Office</h4>
+                        <p>Working from home requires outlets for computer, monitor, chargers, and other devices.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🛏️</div>
+                    <div>
+                        <h4>Bedroom Convenience</h4>
+                        <p>Bedside outlets for phone chargers, lamps, and other nighttime conveniences.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🎬</div>
+                    <div>
+                        <h4>Entertainment Systems</h4>
+                        <p>Home theater setups need multiple outlets for TV, speakers, gaming systems, and more.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🏋️</div>
+                    <div>
+                        <h4>Basement Finishing</h4>
+                        <p>Finished basements need outlets throughout for lighting, TVs, exercise equipment, etc.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">🔌</div>
+                    <div>
+                        <h4>Avoid Overloading</h4>
+                        <p>More outlets means safer electrical distribution and less reliance on power strips.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Process -->
+    <section>
+        <div class="container">
+            <h2>Our Installation Process</h2>
+            <p style="font-size: 1.1rem; max-width: 700px; margin-bottom: 3rem;">Professional installation from start to finish, done right the first time.</p>
+
+            <div class="process-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Assessment</h3>
+                    <p>We evaluate your needs and determine the best outlet locations and types for your space.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Planning</h3>
+                    <p>We plan the wiring route, determine if upgrades are needed, and obtain necessary permits.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Installation</h3>
+                    <p>Professional installation of all outlets with proper wiring, grounding, and secure mounting.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Testing</h3>
+                    <p>All outlets are tested for proper polarity, grounding, and safe operation.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h3>Inspection</h3>
+                    <p>Professional inspection to ensure all work meets electrical codes and safety standards.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <h3>Final Walkthrough</h3>
+                    <p>We review all work with you and answer any questions about your new outlets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outlet Comparison -->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Outlet Type Comparison</h2>
+            <p style="font-size: 1.1rem; max-width: 700px; margin-bottom: 2rem;">Understand the differences to choose the right outlet for each location.</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Standard</th>
+                        <th>GFCI</th>
+                        <th>USB</th>
+                        <th>Smart</th>
+                        <th>AFCI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Voltage</strong></td>
+                        <td>120V</td>
+                        <td>120V</td>
+                        <td>120V</td>
+                        <td>120V</td>
+                        <td>120V</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Amps</strong></td>
+                        <td>15-20A</td>
+                        <td>15-20A</td>
+                        <td>2-4A USB</td>
+                        <td>15-20A</td>
+                        <td>15-20A</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Water Safe</strong></td>
+                        <td>✗</td>
+                        <td>✓</td>
+                        <td>✗</td>
+                        <td>✗</td>
+                        <td>✗</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fire Protection</strong></td>
+                        <td>✗</td>
+                        <td>✗</td>
+                        <td>✗</td>
+                        <td>✗</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td><strong>USB Charging</strong></td>
+                        <td>✗</td>
+                        <td>✗</td>
+                        <td>✓</td>
+                        <td>✗</td>
+                        <td>✗</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Smart Control</strong></td>
+                        <td>✗</td>
+                        <td>✗</td>
+                        <td>✗</td>
+                        <td>✓</td>
+                        <td>✗</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Best Uses</strong></td>
+                        <td>General use</td>
+                        <td>Bathrooms, kitchens</td>
+                        <td>Convenience charging</td>
+                        <td>Modern homes</td>
+                        <td>Bedrooms, living areas</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cost per Outlet</strong></td>
+                        <td>$150-250</td>
+                        <td>$200-300</td>
+                        <td>$250-350</td>
+                        <td>$300-450</td>
+                        <td>$250-350</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section>
+        <div class="container">
+            <h2>Outlet Installation Pricing</h2>
+
+            <div class="pricing-section">
+                <h3 style="margin-top: 0;">Individual Outlet Installation</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Standard Outlet</h3>
+                        <div class="price">$150-250</div>
+                        <p class="price-note">per outlet installed</p>
+                        <ul class="pricing-features">
+                            <li>Professional installation</li>
+                            <li>Code compliant</li>
+                            <li>Testing included</li>
+                            <li>Warranty included</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Quote</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>GFCI/AFCI Outlet</h3>
+                        <div class="price">$200-300</div>
+                        <p class="price-note">per outlet installed</p>
+                        <ul class="pricing-features">
+                            <li>Safety protection</li>
+                            <li>Professional installation</li>
+                            <li>Testing included</li>
+                            <li>Warranty included</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Quote</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>USB/Smart Outlet</h3>
+                        <div class="price">$250-450</div>
+                        <p class="price-note">per outlet installed</p>
+                        <ul class="pricing-features">
+                            <li>Modern convenience</li>
+                            <li>Professional installation</li>
+                            <li>Smart setup included</li>
+                            <li>Warranty included</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Quote</a>
+                    </div>
+                </div>
+
+                <p style="margin-top: 2rem; text-align: center; color: var(--text-light);">*Prices include labor, outlet hardware, and installation. Additional wiring and panel upgrades may apply. Final pricing after on-site assessment.</p>
+
+                <h3 style="margin-top: 3rem; margin-bottom: 1rem;">Multi-Outlet Discounts Available</h3>
+                <p style="color: var(--text-light); margin-bottom: 1rem;">When installing multiple outlets in the same project, we often offer package discounts. Contact us for a detailed quote on your specific needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Outlet Installation Projects</h2>
+            <p style="font-size: 1.1rem; max-width: 700px; margin-bottom: 3rem;">Recent outlet installation projects completed in King County.</p>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://storage.googleapis.com/imagesu/electrician/electrician6.jpg" alt="Kitchen outlet installation">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 style="margin-top: 0;">Kitchen Renovation</h4>
+                        <p>Complete outlet installation for modern kitchen with 12 new outlets including GFCI protection.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://storage.googleapis.com/imagesu/electrician/electrician7.jpg" alt="Home office outlets">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 style="margin-top: 0;">Home Office Setup</h4>
+                        <p>Multiple outlets and USB charging ports installed for complete home office workspace.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://storage.googleapis.com/imagesu/electrician/electrician-9.jpg" alt="Smart outlet installation">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 style="margin-top: 0;">Smart Home Outlets</h4>
+                        <p>WiFi-enabled smart outlets installed throughout home for remote control and scheduling.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://storage.googleapis.com/imagesu/electrician/electrician-10.jpg" alt="Bathroom GFCI outlets">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 style="margin-top: 0;">Bathroom Upgrade</h4>
+                        <p>Code-compliant GFCI outlet installation for bathroom safety and compliance.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://storage.googleapis.com/imagesu/electrician/electrician-11.jpg" alt="Basement finishing outlets">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 style="margin-top: 0;">Basement Finishing</h4>
+                        <p>Complete outlet installation for finished basement including entertainment and workspace outlets.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://storage.googleapis.com/imagesu/electrician/electrician-12.jpg" alt="Bedroom USB outlets">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4 style="margin-top: 0;">Bedroom Convenience</h4>
+                        <p>Bedside outlets with USB charging ports for phones, tablets, and other devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section>
+        <div class="container">
+            <div class="cta-banner">
+                <h2>Need More Outlets in Your Home?</h2>
+                <p>Get a free quote for professional outlet installation throughout your property.</p>
+                <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How many outlets do I need in each room?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The National Electrical Code recommends an outlet every 6 feet of wall space. Modern best practice suggests even more, especially in kitchens and home offices. We can assess your needs and recommend the optimal number.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do I need GFCI outlets in my bathroom?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, by code all bathroom outlets within 6 feet of a sink must be GFCI protected. GFCI outlets prevent electrical shocks in wet environments. We ensure your bathroom is code-compliant and safe.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I add an outlet anywhere in my house?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Most locations work, but we assess factors like existing wiring, circuit capacity, and your electrical panel capacity. Some locations may require wiring extensions, new circuits, or even panel upgrades. We'll discuss all options and costs upfront.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What's the difference between GFCI and AFCI outlets?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>GFCI (Ground Fault):</strong> Protects from electrical shock, required in wet areas like bathrooms and kitchens. <strong>AFCI (Arc Fault):</strong> Prevents electrical fires from faulty wiring, required in bedrooms and living areas. Both are important safety features.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Are smart outlets worth installing?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Smart outlets offer convenience and energy savings. You can control devices remotely, schedule them to turn on/off automatically, and monitor energy usage. They're especially useful for entertainment systems, lighting, and appliances. Installation cost is slightly higher but the benefits often justify it.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How long does outlet installation take?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A single outlet typically takes 1-2 hours. Multiple outlets on the same circuit can be done in a few hours. If new circuits or wiring are needed, it may take longer. We provide a timeline during your consultation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do you need permits for outlet installation?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Most outlet installations require permits to ensure safety and code compliance. We handle all permitting and inspections for you. This protects your investment and ensures everything meets current electrical codes.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What warranty do you provide?</span>
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>All outlet installations come with a one-year warranty on workmanship. If any issues arise from our installation, we'll fix them at no cost. Most outlets also come with manufacturer warranties covering the hardware itself.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact">
+        <div class="container">
+            <div style="background: linear-gradient(135deg, var(--secondary) 0%, #111827 100%); color: white; padding: 4rem; border-radius: 1rem; text-align: center;">
+                <h2 style="color: white;">Get Your Outlet Installation Quote</h2>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem;">Professional outlet installation from King County's trusted electricians.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="tel:4253411111" class="btn btn-primary">📞 Call 425-341-1111</a>
+                    <a href="/#contact" class="btn" style="background-color: white; color: var(--primary);">📧 Contact Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>KREATE Electrician</h4>
+                    <p>Professional outlet installation in King County, WA since 2009.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="/residential-electrical.html">Residential Electrical</a>
+                    <a href="/commercial-electrical.html">Commercial Electrical</a>
+                    <a href="/panel-upgrades.html">Panel Upgrades</a>
+                    <a href="/emergency-services.html">Emergency Services</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="/#services">Services</a>
+                    <a href="/#projects">Projects</a>
+                    <a href="/#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="tel:4253411111">📞 425-341-1111</a>
+                    <a href="mailto:contact@kreate.com">✉️ contact@kreate.com</a>
+                    <a href="https://business.kreate.com/electrician">🌐 business.kreate.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kreate Electrician. Licensed & Insured in King County, WA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Outlet Installation Services",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "KREATE Electrician",
+        "telephone": "+14253411111",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "WA",
+          "addressLocality": "King County"
+        }
+      },
+      "description": "Professional outlet installation services in King County, WA including standard, GFCI, USB, and smart outlets.",
+      "areaServed": "King County, WA",
+      "serviceType": "Outlet Installation"
+    }
+    </script>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

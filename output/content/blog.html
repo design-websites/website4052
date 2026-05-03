@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Electrical tips, safety guides, and home improvement articles from Kreate Electrician in King County, WA. Expert advice on electrical safety, energy savings, and more.">
+    <meta name="keywords" content="electrical blog, electrical tips, electrical safety, home electrical advice, electrician blog King County, electrical guide">
+    <meta name="author" content="Kreate Electrician">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Blog - Electrical Tips & Guides | Kreate Electrician">
+    <meta property="og:description" content="Expert electrical articles, safety tips, and home improvement guides from Kreate Electrician.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kreate-electrician.com/blog">
+    <title>Blog - Electrical Tips & Guides | Kreate Electrician King County WA</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #DC2626;
+            --primary-dark: #991B1B;
+            --primary-light: #FEE2E2;
+            --secondary: #1F2937;
+            --accent: #3B82F6;
+            --text-dark: #111827;
+            --text-light: #6B7280;
+            --bg-light: #F9FAFB;
+            --bg-white: #FFFFFF;
+            --border: #E5E7EB;
+            --success: #10B981;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-white);
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 { font-size: 3rem; line-height: 1.2; }
+        h2 { font-size: 2.25rem; margin-bottom: 2rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+
+        p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover { color: var(--primary); }
+
+        .nav-phone {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background-color: var(--bg-light);
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .breadcrumb a, .breadcrumb span {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .breadcrumb a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        section { padding: 5rem 0; }
+        .bg-light { background-color: var(--bg-light); }
+
+        /* Search & Filter */
+        .search-filter {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.875rem 1.5rem;
+            border: 2px solid var(--border);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-light);
+        }
+
+        /* Category Tags */
+        .category-tags {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .category-tag {
+            padding: 0.5rem 1.25rem;
+            background-color: white;
+            border: 2px solid var(--border);
+            border-radius: 9999px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            color: var(--text-dark);
+        }
+
+        .category-tag:hover,
+        .category-tag.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* Blog Card */
+        .blog-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            overflow: hidden;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .blog-card:hover .blog-image img {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-content {
+            padding: 2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            flex-wrap: wrap;
+        }
+
+        .blog-date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .blog-category {
+            display: inline-block;
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .blog-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+            flex-grow: 1;
+        }
+
+        .blog-excerpt {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .blog-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .read-more {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+
+        .read-more:hover {
+            gap: 0.75rem;
+        }
+
+        .read-time {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Featured Post */
+        .featured-post {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 1rem;
+            margin-bottom: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 3rem;
+            box-shadow: 0 10px 40px rgba(220, 38, 38, 0.2);
+        }
+
+        .featured-image {
+            width: 100%;
+            height: 300px;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .featured-content h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .featured-content p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .featured-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--secondary) 0%, #111827 100%);
+            color: white;
+            padding: 4rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-banner h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-banner p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+        }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-light);
+        }
+
+        .no-results h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 3rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .footer-section a:hover { color: var(--primary); }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+
+            .search-filter {
+                flex-direction: column;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-post {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">⚡ KREATE</a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+                <a href="tel:4253411111" class="nav-phone">📞 425-341-1111</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">Home</a> / <span>Blog</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Electrical Tips & Expert Advice</h1>
+            <p>Learn about electrical safety, home improvements, energy savings, and expert tips from Kreate Electrician.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section>
+        <div class="container">
+            <!-- Search & Filter -->
+            <div class="search-filter">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                </div>
+                <div class="category-tags">
+                    <button class="category-tag active" onclick="filterCategory('all')">All</button>
+                    <button class="category-tag" onclick="filterCategory('safety')">Safety</button>
+                    <button class="category-tag" onclick="filterCategory('tips')">Tips</button>
+                    <button class="category-tag" onclick="filterCategory('energy')">Energy Savings</button>
+                    <button class="category-tag" onclick="filterCategory('home')">Home Improvement</button>
+                </div>
+            </div>
+
+            <!-- Featured Post -->
+            <div class="featured-post" data-category="safety">
+                <div class="featured-image">
+                    <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); display: flex; align-items: center; justify-content: center; font-size: 4rem;">⚠️</div>
+                </div>
+                <div class="featured-content">
+                    <div class="featured-badge">Featured Article</div>
+                    <h3>5 Critical Electrical Safety Hazards in Your Home</h3>
+                    <p>Discover the most dangerous electrical issues homeowners overlook and how to identify them before they become serious problems. Learn what warning signs to watch for.</p>
+                    <a href="/blog/electrical-safety-hazards.html" class="btn btn-primary">Read Full Article →</a>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+                <!-- Article 1: Signs You Need an Electrician -->
+                <div class="blog-card" data-category="safety">
+                    <div class="blog-image">🔌</div>
+                    <div class="blog-content">
+                        <div class="blog-category">Safety</div>
+                        <div class="blog-meta">
+                            <div class="blog-date">📅 March 15, 2024</div>
+                            <div class="read-time">⏱️ 5 min read</div>
+                        </div>
+                        <h3 class="blog-title">6 Signs You Need an Electrician Right Now</h3>
+                        <p class="blog-excerpt">Flickering lights? Tripped breakers? Burning smells? Learn the warning signs that indicate you need professional electrical help immediately to prevent fires and electrical hazards...</p>
+                        <div class="blog-footer">
+                            <a href="/blog/signs-need-electrician.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2: How to Reduce Electric Bill -->
+                <div class="blog-card" data-category="energy">
+                    <div class="blog-image">💡</div>
+                    <div class="blog-content">
+                        <div class="blog-category">Energy Savings</div>
+                        <div class="blog-meta">
+                            <div class="blog-date">📅 March 10, 2024</div>
+                            <div class="read-time">⏱️ 6 min read</div>
+                        </div>
+                        <h3 class="blog-title">10 Ways to Reduce Your Electric Bill This Season</h3>
+                        <p class="blog-excerpt">Save up to 30% on your electricity costs with these proven strategies. From LED upgrades to smart thermostats, discover practical ways to cut your energy consumption...</p>
+                        <div class="blog-footer">
+                            <a href="/blog/reduce-electric-bill.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3: Electrical Code -->
+                <div class="blog-card" data-category="tips">
+                    <div class="blog-image">📋</div>
+                    <div class="blog-content">
+                        <div class="blog-category">Tips</div>
+                        <div class="blog-meta">
+                            <div class="blog-date">📅 March 5, 2024</div>
+                            <div class="read-time">⏱️ 7 min read</div>
+                        </div>
+                        <h3 class="blog-title">Understanding Electrical Codes: What Every Homeowner Should Know</h3>
+                        <p class="blog-excerpt">Why do electrical codes exist? What are the key requirements in Washington State? Learn the basics of electrical codes and why they protect your home and family...</p>
+                        <div class="blog-footer">
+                            <a href="/blog/electrical-codes.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 4: DIY vs Professional -->
+                <div class="blog-card" data-category="tips">
+                    <div class="blog-image">🔧</div>
+                    <div class="blog-content">
+                        <div class="blog-category">Tips</div>
+                        <div class="blog-meta">
+                            <div class="blog-date">📅 February 28, 2024</div>
+                            <div class="read-time">⏱️ 5 min read</div>
+                        </div>
+                        <h3 class="blog-title">DIY vs Professional Electrician: When to Call an Expert</h3>
+                        <p class="blog-excerpt">Some electrical projects are DIY-friendly, while others require a licensed electrician. Learn which tasks you can safely handle yourself and which ones need professional help...</p>
+                        <div class="blog-footer">
+                            <a href="/blog/diy-vs-professional.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 5: Water and Electricity Safety -->
+                <div class="blog-card" data-category="safety">
+                    <div class="blog-image">💧</div>
+                    <div class="blog-content">
+                        <div class="blog-category">Safety</div>
+                        <div class="blog-meta">
+                            <div class="blog-date">📅 February 22, 2024</div>
+                            <div class="read-time">⏱️ 5 min read</div>
+                        </div>
+                        <h3 class="blog-title">Water and Electricity: GFCI Protection Explained</h3>
+                        <p class="blog-excerpt">GFCI outlets save lives. Discover how Ground Fault Circuit Interrupter technology works and why you absolutely need them in bathrooms, kitchens, and outdoor areas...</p>
+                        <div class="blog-footer">
+                            <a href="/blog/gfci-protection.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 6: Panel Upgrade Benefits -->
+                <div class="blog-card" data-category="home">
+                    <div class="blog-image">⚡</div>
+                    <div class="blog-content">
+                        <div class="blog-category">Home Improvement</div>
+                        <div class="blog-meta">
+                            <div class="blog-date">📅 February 15, 2024</div>
+                            <div class="read-time">⏱️ 6 min read</div>
+                        </div>
+                        <h3 class="blog-title">Is a Electrical Panel Upgrade Worth It? Benefits & Costs</h3>
+                        <p class="blog-excerpt">Upgrading from a 100A to 200A panel increases home value, improves safety, and enables modern appliances. Learn if a panel upgrade makes sense for your home...</p>
+                        <div class="blog-footer">
+                            <a href="/blog/panel-upgrade-worth.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 7: LED Lighting Benefits -->
+                <div class="blog-card" data-category="energy">
+                    <div class="blog-image">💡</div>
+                    <div class="blog-content">
+                        <div class="blog-category">Energy Savings</div>
+                        <div class="blog-meta">
+                            <div class="blog-date">📅 February 8, 2024</div>
+                            <div class="read-time">⏱️ 6 min read</div>
+                        </div>
+                        <h3 class="blog-title">Why LED Lighting is Worth the Investment (And It Saves Money)</h3>
+                        <p class="blog-excerpt">LED bulbs use 75% less energy than incandescent bulbs and last 25 times longer. Calculate your ROI and discover why LED upgrades are one of the best home investments...</p>
+                        <div class="blog-footer">
+                            <a href="/blog/led-lighting-benefits.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 8: Electrical Emergency -->
+                <div class="blog-card" data-category="safety">
+                    <div class="blog-image">🚨</div>
+                    <div class="blog-content">
+                        <div class="blog-category">Safety</div>
+                        <div class="blog-meta">
+                            <div class="blog-date">📅 February 1, 2024</div>
+                            <div class="read-time">⏱️ 4 min read</div>
+                        </div>
+                        <h3 class="blog-title">What To Do During an Electrical Emergency: Quick Action Guide</h3>
+                        <p class="blog-excerpt">Experiencing a power outage, sparking outlet, or burning smell? Follow this step-by-step guide to stay safe during electrical emergencies and when to call for help...</p>
+                        <div class="blog-footer">
+                            <a href="/blog/electrical-emergency-guide.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 9: Smart Home Electrical -->
+                <div class="blog-card" data-category="home">
+                    <div class="blog-image">📱</div>
+                    <div class="blog-content">
+                        <div class="blog-category">Home Improvement</div>
+                        <div class="blog-meta">
+                            <div class="blog-date">📅 January 25, 2024</div>
+                            <div class="read-time">⏱️ 7 min read</div>
+                        </div>
+                        <h3 class="blog-title">Smart Home Electrical: Adding WiFi Outlets & Smart Lighting</h3>
+                        <p class="blog-excerpt">Transform your home with smart electrical devices. Learn how smart outlets, smart lighting, and voice control integration work and what installation looks like...</p>
+                        <div class="blog-footer">
+                            <a href="/blog/smart-home-electrical.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 10: Outdoor Electrical Safety -->
+                <div class="blog-card" data-category="safety">
+                    <div class="blog-image">🌧️</div>
+                    <div class="blog-content">
+                        <div class="blog-category">Safety</div>
+                        <div class="blog-meta">
+                            <div class="blog-date">📅 January 18, 2024</div>
+                            <div class="read-time">⏱️ 6 min read</div>
+                        </div>
+                        <h3 class="blog-title">Outdoor Electrical Safety: What You Must Know</h3>
+                        <p class="blog-excerpt">Outdoor outlets, landscape lighting, and pool equipment need special protection. Learn about waterproof outlets, GFCI protection, and outdoor electrical safety best practices...</p>
+                        <div class="blog-footer">
+                            <a href="/blog/outdoor-electrical-safety.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <h3>No articles found</h3>
+                <p>Try adjusting your search or category filters</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="cta-banner">
+                <h2>Need Professional Electrical Help?</h2>
+                <p>Contact our expert team at Kreate Electrician for professional service in King County, WA</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="tel:4253411111" class="btn btn-primary">📞 Call 425-341-1111</a>
+                    <a href="/#contact" class="btn" style="background-color: white; color: var(--primary);">📧 Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>KREATE Electrician</h4>
+                    <p>Professional electrical services in King County, WA since 2009. Licensed, insured, and certified.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="/residential-electrical.html">Residential Electrical</a>
+                    <a href="/commercial-electrical.html">Commercial Electrical</a>
+                    <a href="/emergency-services.html">Emergency Services</a>
+                    <a href="/panel-upgrades.html">Panel Upgrades</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/blog.html">Blog</a>
+                    <a href="/faq.html">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="tel:4253411111">📞 425-341-1111</a>
+                    <a href="mailto:contact@kreate.com">✉️ contact@kreate.com</a>
+                    <a href="https://business.kreate.com/electrician">🌐 business.kreate.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kreate Electrician. All rights reserved. Licensed & Insured in King County, WA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Kreate Electrician Blog",
+      "description": "Electrical tips, safety guides, and home improvement articles",
+      "publisher": {
+        "@type": "LocalBusiness",
+        "name": "KREATE Electrician",
+        "telephone": "+14253411111",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "WA",
+          "addressLocality": "King County"
+        }
+      }
+    }
+    </script>
+
+    <script>
+        // Search and Filter Functionality
+        function filterCategory(category) {
+            const cards = document.querySelectorAll('.blog-card, .featured-post');
+            const tags = document.querySelectorAll('.category-tag');
+            let visibleCount = 0;
+
+            // Update active tag
+            tags.forEach(tag => tag.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show/hide no results message
+            document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('keyup', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.blog-card, .featured-post');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+                const excerpt = card.querySelector('p')?.textContent.toLowerCase() || '';
+                const category = card.querySelector('.blog-category')?.textContent.toLowerCase() || '';
+
+                if (title.includes(searchTerm) || excerpt.includes(searchTerm) || category.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Show/hide no results message
+            document.getElementById('noResults').style.display = visibleCount === 0 ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>

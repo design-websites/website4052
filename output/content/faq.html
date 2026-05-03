@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions about electrical services in King County, WA. Find answers to common electrical questions, safety tips, and service information.">
+    <meta name="keywords" content="electrical FAQ, electrician questions, electrical safety, electrical problems, electrician King County, electrical code, electrical repair">
+    <meta name="author" content="Kreate Electrician">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="FAQ - Kreate Electrician King County WA">
+    <meta property="og:description" content="Find answers to common electrical questions and get expert advice from Kreate Electrician.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kreate-electrician.com/faq">
+    <title>FAQ - Frequently Asked Questions | Kreate Electrician King County WA</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #DC2626;
+            --primary-dark: #991B1B;
+            --primary-light: #FEE2E2;
+            --secondary: #1F2937;
+            --accent: #3B82F6;
+            --text-dark: #111827;
+            --text-light: #6B7280;
+            --bg-light: #F9FAFB;
+            --bg-white: #FFFFFF;
+            --border: #E5E7EB;
+            --success: #10B981;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--bg-white);
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.03em;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-phone {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background-color: var(--bg-light);
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .breadcrumb a, .breadcrumb span {
+            color: var(--text-light);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Main Content */
+        section {
+            padding: 5rem 0;
+        }
+
+        .bg-light {
+            background-color: var(--bg-light);
+        }
+
+        /* Search Box */
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            margin: 3rem 0;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 0.875rem 1.5rem;
+            border: 2px solid var(--border);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-light);
+        }
+
+        /* Category Navigation */
+        .category-nav {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .category-btn {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--border);
+            background: white;
+            border-radius: 9999px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            color: var(--text-dark);
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        /* FAQ Category */
+        .faq-category {
+            margin-bottom: 4rem;
+        }
+
+        .faq-category h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        /* FAQ Item */
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-color: var(--primary-light);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.05rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1rem;
+            color: var(--text-dark);
+        }
+
+        .faq-question:hover {
+            color: var(--primary);
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            color: var(--primary);
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            display: none;
+            color: var(--text-light);
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .faq-answer ul, .faq-answer ol {
+            margin: 1rem 0 1rem 2rem;
+            color: var(--text-light);
+        }
+
+        .faq-answer li {
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-answer strong {
+            color: var(--text-dark);
+        }
+
+        /* Quick Links */
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .quick-link-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 2px solid var(--border);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .quick-link-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .quick-link-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .quick-link-card h4 {
+            margin-bottom: 0.75rem;
+        }
+
+        .quick-link-card p {
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .quick-link-card a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .quick-link-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 4rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-banner h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-banner p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 3rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .category-nav {
+                flex-direction: column;
+            }
+
+            .category-btn {
+                width: 100%;
+            }
+
+            .faq-question {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">⚡ KREATE</a>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/#services">Services</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                </ul>
+                <a href="tel:4253411111" class="nav-phone">📞 425-341-1111</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">Home</a> / <span>FAQ</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common electrical questions, safety tips, and information about our services.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section>
+        <div class="container">
+            <!-- Search -->
+            <div class="search-box">
+                <input type="text" id="faqSearch" placeholder="Search questions...">
+                <button class="btn btn-primary" onclick="searchFAQ()">Search</button>
+            </div>
+
+            <!-- Category Navigation -->
+            <div class="category-nav">
+                <button class="category-btn active" onclick="filterCategory('all')">All Questions</button>
+                <button class="category-btn" onclick="filterCategory('general')">General</button>
+                <button class="category-btn" onclick="filterCategory('safety')">Safety</button>
+                <button class="category-btn" onclick="filterCategory('service')">Services</button>
+                <button class="category-btn" onclick="filterCategory('pricing')">Pricing</button>
+                <button class="category-btn" onclick="filterCategory('emergency')">Emergency</button>
+            </div>
+
+            <!-- General Questions -->
+            <div class="faq-category" data-category="general">
+                <h3>General Questions</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What areas do you serve?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We serve all of King County, Washington, including Seattle, Bellevue, Renton, Kirkland, Redmond, and surrounding areas. We offer 24/7 emergency service throughout our service area with response times of 15-30 minutes depending on location.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are you licensed and insured?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely. All of our electricians are fully licensed by the State of Washington. We carry comprehensive liability insurance and workers' compensation coverage. You can verify our licenses and credentials at any time.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I schedule an appointment?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can schedule an appointment by:</p>
+                        <ul>
+                            <li><strong>Calling us:</strong> 425-341-1111</li>
+                            <li><strong>Online contact form:</strong> Visit our contact page</li>
+                            <li><strong>Email:</strong> contact@kreate.com</li>
+                            <li><strong>Emergency service:</strong> Call 425-341-1111 anytime, day or night</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you guarantee your work?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we stand behind all of our work. All electrical installations and repairs come with a one-year warranty. If any issues arise from our workmanship, we'll fix them at no cost to you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long have you been in business?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kreate Electrician was founded in 2009 and has been serving King County for over 15 years. We've completed 500+ projects and maintain a 4.9-star customer rating. Our experience and reputation speak for themselves.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Safety Questions -->
+            <div class="faq-category" data-category="safety">
+                <h3>Electrical Safety</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What should I do if I smell burning from an outlet?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A burning smell from an outlet is a serious warning sign. <strong>Do not ignore it.</strong> You should:</p>
+                        <ul>
+                            <li>Turn off the breaker for that circuit immediately</li>
+                            <li>Do not touch the outlet or plug anything into it</li>
+                            <li>Call us immediately at 425-341-1111 for emergency service</li>
+                            <li>If you see smoke or flames, evacuate and call 911</li>
+                        </ul>
+                        <p>Burning smells usually indicate electrical damage that could lead to fires if not addressed immediately.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is it safe to have water near electrical outlets?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, water and electricity are extremely dangerous together. In bathrooms and kitchens, outlets should be:</p>
+                        <ul>
+                            <li><strong>GFCI protected</strong> - These outlets shut off power if they sense moisture</li>
+                            <li><strong>Located away from water sources</strong> - At least 6 feet from sinks, tubs, and showers</li>
+                        </ul>
+                        <p>If water comes into contact with electrical equipment, turn off the breaker immediately and call us. Never touch or use electrical items that have gotten wet.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What's a GFCI outlet and why do I need them?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>GFCI stands for Ground Fault Circuit Interrupter.</strong> These special outlets protect you from electrical shock by instantly cutting power if they detect an electrical fault. They're required by code in:</p>
+                        <ul>
+                            <li>Bathrooms</li>
+                            <li>Kitchens</li>
+                            <li>Outdoors</li>
+                            <li>Garages</li>
+                            <li>Any area near water</li>
+                        </ul>
+                        <p>GFCI outlets can save your life. We can install them throughout your home.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I tell if an outlet is dangerous?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Warning signs of dangerous outlets include:</p>
+                        <ul>
+                            <li>Cracks or damage to the outlet cover</li>
+                            <li>Loose outlet that wiggles</li>
+                            <li>Discoloration or scorch marks</li>
+                            <li>Warm or hot outlet (even with nothing plugged in)</li>
+                            <li>Buzzing or humming sounds</li>
+                            <li>Burning smell</li>
+                            <li>Sparks when plugging things in</li>
+                        </ul>
+                        <p>If you notice any of these, stop using the outlet immediately and call us for repair.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is it safe to do electrical work myself?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Electrical work can be very dangerous if not done properly. Even minor mistakes can lead to:</p>
+                        <ul>
+                            <li>Electrical shocks or electrocution</li>
+                            <li>Fires and property damage</li>
+                            <li>Code violations</li>
+                            <li>Insurance issues</li>
+                            <li>Voided warranties</li>
+                        </ul>
+                        <p>We strongly recommend hiring a licensed electrician for any electrical work. Our team can handle projects safely and in compliance with all codes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What should I do during an electrical emergency?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>In an electrical emergency:</p>
+                        <ul>
+                            <li><strong>Call us immediately:</strong> 425-341-1111 (24/7)</li>
+                            <li><strong>If there's fire or smoke:</strong> Call 911 first, then call us</li>
+                            <li><strong>If someone is shocked:</strong> Call 911. Don't touch them if they're still in contact with electricity</li>
+                            <li><strong>Turn off power if safe:</strong> Use the breaker panel if you can do so safely</li>
+                            <li><strong>Stay away:</strong> Keep people and pets away from the problem area</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Questions -->
+            <div class="faq-category" data-category="service">
+                <h3>About Our Services</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you install new lighting fixtures?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We install all types of lighting including:</p>
+                        <ul>
+                            <li>Ceiling fixtures and chandeliers</li>
+                            <li>Wall sconces and vanity lighting</li>
+                            <li>Recessed and pendant lighting</li>
+                            <li>Outdoor and landscape lighting</li>
+                            <li>Under-cabinet and accent lighting</li>
+                            <li>Smart lighting systems</li>
+                        </ul>
+                        <p>We can also help you choose the right fixtures for your space and needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you add new outlets to my home?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We install outlets throughout homes and businesses. Common reasons for adding outlets include:</p>
+                        <ul>
+                            <li>Kitchen remodels (often need more outlets)</li>
+                            <li>Home offices and workspaces</li>
+                            <li>Entertainment systems</li>
+                            <li>Phone charging stations</li>
+                            <li>Outdoor patios and decks</li>
+                        </ul>
+                        <p>We ensure all new outlets meet current electrical codes and are properly grounded.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you handle electrical panel upgrades?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, panel upgrades are one of our specialties. We can upgrade your panel from:</p>
+                        <ul>
+                            <li>100A to 150A or 200A</li>
+                            <li>Old fuse boxes to modern circuit breaker panels</li>
+                        </ul>
+                        <p>Panel upgrades are necessary if you frequently trip breakers, plan renovations, want to add an EV charger, or have an older home. We handle all permits and inspections.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you install EV chargers?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we specialize in EV charger installation. We can install:</p>
+                        <ul>
+                            <li>Level 2 home charging stations</li>
+                            <li>240V dedicated circuits</li>
+                            <li>Chargers integrated with panel upgrades</li>
+                        </ul>
+                        <p>We handle the electrical design, permits, and installation so you can charge your vehicle at home conveniently and safely.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you rewire my entire home?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we perform complete home rewiring projects. This is often necessary for:</p>
+                        <ul>
+                            <li>Homes over 40+ years old with outdated wiring</li>
+                            <li>Safety upgrades (old cloth/aluminum wiring)</li>
+                            <li>Increased electrical capacity needs</li>
+                            <li>Code compliance for renovations</li>
+                        </ul>
+                        <p>Full rewiring is a significant project, but it improves safety and allows for modern electrical demands. We'll work with your schedule to minimize disruption.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer maintenance plans?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, especially for commercial customers. Our maintenance plans include:</p>
+                        <ul>
+                            <li>Regular electrical system inspections</li>
+                            <li>Preventive maintenance</li>
+                            <li>Priority service scheduling</li>
+                            <li>Emergency service availability</li>
+                            <li>Cost savings vs. emergency repairs</li>
+                        </ul>
+                        <p>Contact us for a customized maintenance plan for your property.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Questions -->
+            <div class="faq-category" data-category="pricing">
+                <h3>Pricing & Payment</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How much does a basic service call cost?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Service call fees vary based on the type of work:</p>
+                        <ul>
+                            <li><strong>Standard service call:</strong> $100-150 (includes diagnosis)</li>
+                            <li><strong>Emergency after-hours:</strong> Additional 25% premium</li>
+                            <li><strong>Minimum charge:</strong> Usually covers first hour of work</li>
+                        </ul>
+                        <p>The service call fee is often applied toward the cost of repair if you decide to proceed with work. We provide a detailed estimate before starting any work.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What's your hourly rate for electrical work?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our rates are transparent and competitive:</p>
+                        <ul>
+                            <li><strong>Standard service:</strong> $125-200/hour (depending on complexity)</li>
+                            <li><strong>Emergency service (after 6pm):</strong> Standard rate + 25%</li>
+                            <li><strong>Materials:</strong> Charged at cost plus reasonable markup</li>
+                        </ul>
+                        <p>We always provide written estimates before starting work so you know exactly what to expect.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer financing options?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For larger projects, we can discuss financing options. Contact us directly to discuss:</p>
+                        <ul>
+                            <li>Payment plans</li>
+                            <li>Financing partnerships</li>
+                            <li>Contractor financing programs</li>
+                        </ul>
+                        <p>We work with you to make necessary electrical work affordable.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you accept insurance claims?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we work with insurance companies for eligible claims including:</p>
+                        <ul>
+                            <li>Fire damage restoration</li>
+                            <li>Water damage electrical repairs</li>
+                            <li>Storm-related electrical damage</li>
+                            <li>Other insured incidents</li>
+                        </ul>
+                        <p>We can provide detailed documentation and work directly with your insurance company to streamline the claims process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all major payment methods:</p>
+                        <ul>
+                            <li>Credit and debit cards</li>
+                            <li>Bank transfers/ACH</li>
+                            <li>Checks</li>
+                            <li>Cash</li>
+                        </ul>
+                        <p>Payment is typically due upon completion of work, though we can discuss payment arrangements for larger projects.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Why does electrical work cost so much?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Quality electrical work involves significant investment in:</p>
+                        <ul>
+                            <li><strong>Expertise:</strong> Licensed electricians with years of training and experience</li>
+                            <li><strong>Materials:</strong> High-quality materials that meet code requirements</li>
+                            <li><strong>Permits & Inspections:</strong> Required to ensure safety and code compliance</li>
+                            <li><strong>Insurance:</strong> We carry comprehensive coverage to protect you</li>
+                            <li><strong>Safety & Reliability:</strong> Proper installation prevents fires and electrical hazards</li>
+                        </ul>
+                        <p>Cheap electrical work can be dangerous. We provide quality work that protects your home and family.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Questions -->
+            <div class="faq-category" data-category="emergency">
+                <h3>Emergency Services</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are you available for emergency service 24/7?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer 24/7 emergency electrical service. Whether it's midnight, a weekend, or a holiday, call us at <strong>425-341-1111</strong> and we'll dispatch the nearest available technician.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What's the typical response time for emergencies?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We prioritize emergency calls and dispatch immediately:</p>
+                        <ul>
+                            <li><strong>Central King County:</strong> 15-20 minute average response</li>
+                            <li><strong>Throughout King County:</strong> 30 minutes or less</li>
+                        </ul>
+                        <p>When you call, we'll give you an estimated arrival time. The faster we respond, the faster we can prevent further damage and restore your power.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What's the difference between emergency and regular rates?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Emergency service rates apply:</p>
+                        <ul>
+                            <li><strong>After 6:00 PM weekdays</strong></li>
+                            <li><strong>All day Saturday and Sunday</strong></li>
+                            <li><strong>Holidays</strong></li>
+                        </ul>
+                        <p>Emergency rates are typically 25% higher than standard rates to compensate for after-hours availability. We provide transparent pricing so you know the costs upfront.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What qualifies as an electrical emergency?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Electrical emergencies include:</p>
+                        <ul>
+                            <li>Complete loss of power</li>
+                            <li>Sparking outlets or wiring</li>
+                            <li>Burning smells from electrical equipment</li>
+                            <li>Breakers that won't stay on</li>
+                            <li>Electrical fire</li>
+                            <li>Water damage near electrical systems</li>
+                            <li>Any situation that poses immediate danger</li>
+                        </ul>
+                        <p>If you're unsure, call us. We can help assess whether your situation requires emergency service.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What should I do while waiting for emergency service?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While waiting for our emergency technician:</p>
+                        <ul>
+                            <li><strong>Turn off power if safe:</strong> Use your circuit breaker panel if you can do so safely</li>
+                            <li><strong>Stay away:</strong> Keep people and pets away from the problem area</li>
+                            <li><strong>Don't touch:</strong> Don't touch sparking wires or flooded electrical equipment</li>
+                            <li><strong>Gather info:</strong> Note what happened and when the problem started</li>
+                            <li><strong>Evacuate if needed:</strong> If there's smoke or fire, leave immediately and call 911</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Need More Help?</h2>
+            
+            <div class="quick-links">
+                <div class="quick-link-card">
+                    <div class="quick-link-icon">📧</div>
+                    <h4>Contact Us</h4>
+                    <p>Have a question we didn't cover? Get in touch with our team.</p>
+                    <a href="/#contact">Send us a message →</a>
+                </div>
+
+                <div class="quick-link-card">
+                    <div class="quick-link-icon">📞</div>
+                    <h4>Call Us</h4>
+                    <p>Prefer to talk? Give us a call anytime during business hours.</p>
+                    <a href="tel:4253411111">Call 425-341-1111 →</a>
+                </div>
+
+                <div class="quick-link-card">
+                    <div class="quick-link-icon">🆘</div>
+                    <h4>Emergency Service</h4>
+                    <p>Electrical emergency happening now? We're available 24/7.</p>
+                    <a href="tel:4253411111">Emergency Call →</a>
+                </div>
+
+                <div class="quick-link-card">
+                    <div class="quick-link-icon">📋</div>
+                    <h4>Schedule Service</h4>
+                    <p>Book an appointment for electrical work or inspection.</p>
+                    <a href="/#contact">Schedule Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section>
+        <div class="container">
+            <div class="cta-banner">
+                <h2>Couldn't Find Your Answer?</h2>
+                <p>Our expert team is ready to help with any electrical questions or concerns.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="tel:4253411111" class="btn btn-primary">📞 Call 425-341-1111</a>
+                    <a href="/#contact" class="btn" style="background-color: white; color: var(--primary);">📧 Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>KREATE Electrician</h4>
+                    <p>Professional electrical services in King County, WA since 2009. Licensed, insured, and certified.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="/residential-electrical.html">Residential Electrical</a>
+                    <a href="/commercial-electrical.html">Commercial Electrical</a>
+                    <a href="/emergency-services.html">Emergency Services</a>
+                    <a href="/panel-upgrades.html">Panel Upgrades</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/faq.html">FAQ</a>
+                    <a href="/#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="tel:4253411111">📞 425-341-1111</a>
+                    <a href="mailto:contact@kreate.com">✉️ contact@kreate.com</a>
+                    <a href="https://business.kreate.com/electrician">🌐 business.kreate.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kreate Electrician. All rights reserved. Licensed & Insured in King County, WA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org FAQ Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What areas do you serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve all of King County, Washington, including Seattle, Bellevue, Renton, Kirkland, Redmond, and surrounding areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you available for emergency service 24/7?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We offer 24/7 emergency electrical service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you licensed and insured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, all electricians are fully licensed by the State of Washington with comprehensive liability insurance."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script>
+        // FAQ Toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Category filter
+        function filterCategory(category) {
+            const items = document.querySelectorAll('.faq-category');
+            const buttons = document.querySelectorAll('.category-btn');
+
+            // Update button states
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Show/hide categories
+            items.forEach(item => {
+                if (category === 'all') {
+                    item.style.display = 'block';
+                } else if (item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Scroll to first visible
+            const firstVisible = document.querySelector('.faq-category[style="display: block"]');
+            if (firstVisible) {
+                firstVisible.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // Search functionality
+        function searchFAQ() {
+            const searchTerm = document.getElementById('faqSearch').value.toLowerCase();
+            const faqItems = document.querySelectorAll('.faq-item');
+            let visibleCount = 0;
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            if (visibleCount === 0 && searchTerm) {
+                alert('No matching questions found. Try different keywords.');
+            }
+        }
+
+        // Allow Enter key to search
+        document.getElementById('faqSearch').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                searchFAQ();
+            }
+        });
+    </script>
+</body>
+</html>
