@@ -977,27 +977,22 @@
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
                     <div id="formMessage" class="form-message"></div>
 
                     <div class="form-group">
                         <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" autocomplete="name" required>
+                        <input type="text" id="name" name="name" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" autocomplete="email" required>
+                        <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="form-group">
                         <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" autocomplete="tel" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="address">Project Address</label>
-                        <input type="text" id="address" name="address" autocomplete="street-address" placeholder="City or street address">
+                        <input type="tel" id="phone" name="phone" required>
                     </div>
 
                     <div class="form-group">
@@ -1006,11 +1001,11 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Project Details *</label>
-                        <textarea id="message" name="message" placeholder="Tell us what you need help with, timing, and any important details." required></textarea>
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary form-submit">Open Email Client</button>
+                    <button type="submit" class="btn btn-primary form-submit">Send Message</button>
                 </form>
             </div>
         </div>
@@ -1086,21 +1081,18 @@
     <script>
         function handleFormSubmit(event) {
             event.preventDefault();
-
+            
             const form = document.getElementById('contactForm');
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
             const messageDiv = document.getElementById('formMessage');
-            const formData = new FormData(form);
-
-            const name = formData.get('name').trim();
-            const email = formData.get('email').trim();
-            const phone = formData.get('phone').trim();
-            const address = formData.get('address').trim();
-            const service = formData.get('service').trim();
-            const message = formData.get('message').trim();
 
             // Validate form
             if (!name || !email || !phone || !service || !message) {
-                messageDiv.textContent = 'Please fill out all required fields.';
+                messageDiv.textContent = 'Please fill out all fields.';
                 messageDiv.className = 'form-message error';
                 return;
             }
@@ -1113,30 +1105,22 @@
                 return;
             }
 
-            const recipient = 'viti-electric@kreatewebsites.com';
-            const subject = `New Service Request from ${name}`;
-            const body = [
-                'New service request from website contact form:',
-                '',
-                `Name: ${name}`,
-                `Email: ${email}`,
-                `Phone: ${phone}`,
-                `Project Address: ${address || 'Not provided'}`,
-                `Service Needed: ${service}`,
-                '',
-                'Project Details:',
-                message
-            ].join('
-');
+            // Create email body
+            const emailBody = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0A%0AMessage:%0A${message}`;
+            
+            // Open email client
+            window.location.href = `mailto:viti-electric@kreatewebsites.com?subject=New%20Service%20Request%20from%20${encodeURIComponent(name)}&body=${emailBody}`;
 
-            const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-            messageDiv.textContent = 'Opening your email client with the message details...';
+            // Show success message
+            messageDiv.textContent = 'Thank you! Opening your email client...';
             messageDiv.className = 'form-message success';
-            window.location.href = mailtoUrl;
-        }
 
-        document.getElementById('contactForm').addEventListener('submit', handleFormSubmit);
+            // Reset form after delay
+            setTimeout(() => {
+                form.reset();
+                messageDiv.className = 'form-message';
+            }, 3000);
+        }
 
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
